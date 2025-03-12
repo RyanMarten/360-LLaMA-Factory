@@ -1027,6 +1027,18 @@ _register_template(
     mm_plugin=get_mm_plugin(name="qwen2_vl", image_token="<|image_pad|>", video_token="<|video_pad|>"),
 )
 
+_register_template(
+    name="qwen25",
+    format_user=StringFormatter(slots=["<|im_start|>user\n{{content}}<|im_end|>\n<|im_start|>assistant\n"]),
+    format_system=StringFormatter(slots=["<|im_start|>system\n{{content}}<|im_end|>\n"]),
+    format_observation=StringFormatter(slots=["<|im_start|>tool\n{{content}}<|im_end|>\n<|im_start|>assistant\n"]),
+    format_separator=EmptyFormatter(slots=["\n"]),
+    default_system="You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+    stop_words=["<|endoftext|>"],
+    replace_eos=True,
+    replace_jinja_template=False,
+)
+
 
 _register_template(
     name="sailor",
