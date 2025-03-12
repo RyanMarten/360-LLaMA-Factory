@@ -624,5 +624,18 @@
       "prompt": "content"
     },
     "folder": "python"
+  },
+  "mlfoundations-dev/wikipedia_seed_science": {
+    "hf_hub_url": "mlfoundations-dev/wikipedia_seed_science",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    },
+    "tags": {
+      "role_tag": "from",
+      "content_tag": "value",
+      "user_tag": "human",
+      "assistant_tag": "gpt"
+    }
   }
 }

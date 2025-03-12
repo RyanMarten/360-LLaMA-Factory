@@ -36,6 +36,7 @@ ddp_timeout: 180000000
 
 # OTHER
 dataset: mlfoundations-dev/wikipedia_seed_science
+# INTEAD PUT THESE IN data/dataset_info.json
 # messages: conversations
 # formatting: sharegpt
 # role_tag: from
