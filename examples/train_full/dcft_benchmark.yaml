@@ -1,6 +1,7 @@
 # from https://github.com/mlfoundations/dcft_private/blob/main/dcft/train/hp_settings/reasoning.yaml
 # plus https://github.com/mlfoundations/dcft_private/blob/main/dcft/train/configs/multiple_samples/multiple_samples_none_numina_aime.yaml
 
+# https://github.com/mlfoundations/dcft_private/pull/291/files#diff-3df799a0c8c680084a6046c2c28675dc353126309b25b695ff5c586dd9d6db77
 
 # SHARED 
 ### model
@@ -41,6 +42,8 @@ role_tag: from
 content_tag: value
 user_tag: human
 assistant_tag: gpt
+
+output_dir: saves/test
 
 per_device_train_batch_size: 1      # Can change depending on hardware
 gradient_accumulation_steps: 1      # Can change depending on number of GPUs
